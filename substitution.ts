@@ -1,2 +1,1 @@
-const myName: string = "Pocok";
-console.log(`Test name is ${myName}`);
+console.log("process.argv: ", process.argv);
