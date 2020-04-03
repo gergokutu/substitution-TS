@@ -1,3 +1,4 @@
+"use strict";
 const usageInfo = `
 !! Usage: node substitution.js <key> !!
 
@@ -22,4 +23,5 @@ const validateCLIArg = (argv, info) => {
 };
 validateCLIArg(argv, usageInfo);
 console.log("Success");
+module.exports = validateCLIArg;
 //# sourceMappingURL=substitution.js.map

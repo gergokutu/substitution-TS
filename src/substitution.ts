@@ -1,4 +1,3 @@
-
 const usageInfo = `
 !! Usage: node substitution.js <key> !!
 
@@ -24,5 +23,7 @@ const validateCLIArg = (argv: string[], info: string): void => {
   }
 }
 
-validateCLIArg(argv, usageInfo);
-console.log("Success");
+validateCLIArg(argv, usageInfo)
+console.log("Success")
+
+export = validateCLIArg;
