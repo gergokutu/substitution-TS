@@ -1,6 +1,13 @@
 {
+  "include": [
+    "src/*"
+  ],
   "compilerOptions": {
     "target": "esnext",
-    "watch": true
+    "module": "commonjs",
+    "sourceMap": true,
+    "watch": true,
+    "outDir": "./build",
+    "lib": ["es6"]
   }
 }
