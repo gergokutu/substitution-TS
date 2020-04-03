@@ -7,6 +7,7 @@
     "module": "commonjs",
     "sourceMap": true,
     "watch": true,
-    "outDir": "./build"
+    "outDir": "./build",
+    "lib": ["es6"]
   }
 }
