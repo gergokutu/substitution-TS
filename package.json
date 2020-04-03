@@ -1,0 +1,23 @@
+{
+  "name": "substitution",
+  "version": "1.0.0",
+  "description": "Text encrypting program written in TypeScript",
+  "main": "substitution.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gergokutu/substitution-TS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gergokutu/substitution-TS/issues"
+  },
+  "homepage": "https://github.com/gergokutu/substitution-TS#readme",
+  "dependencies": {
+    "@types/node": "^13.11.0"
+  }
+}
