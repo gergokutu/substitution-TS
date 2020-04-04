@@ -1,7 +1,8 @@
 # SUBSTITUTION-TS
-Text encrypting program written in TypeScript.
-
-
+Text encrypting program written in TypeScript. User should ensure the key through CLI argument.
+If the key is valid you can input the plaintext which is going to be encrypted after hitting enter.
+You can see the result in the console > "ciphertext:..."
+Every character of the key has its pair from the alphabet.
 
 ***************************************
 
@@ -14,6 +15,17 @@ Text encrypting program written in TypeScript.
 * The key is case insensitive.        
 
 ***************************************
+
+## TECHNOLOGIES
+- Typescript
+- Node.js
+- Jest
+
+## PROJECT SETUP
+You can clone the remote git repository to your computer with the following command using your terminal:
+git clone git@github.com:gergokutu/substitution-TS.git
+
+The previous command handles all the necessary npm packages.
 
 ## BRANCHING STRUCTURE
 - master > only features tested on development branch pulled here
