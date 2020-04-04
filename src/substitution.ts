@@ -55,18 +55,11 @@ export const validate_key = (key: string): void => {
 validateCLIArg(len, usageInfo);
 validate_key(key);
 
-console.log("Success");
-
-const readline: any = require('readline').createInterface({
-  input: process.stdin,
-  output: process.stdout
-});
-
 const print_ciphertext = (plaintext: string, key: string): string => {
 
   const abc: string = "ABCDEFGHIJKLMNOPQRSTUVWXYZuvwxyz";
-  const plain_length = plaintext.length;
-  const upperCasePlaintext = plaintext.toUpperCase();
+  const plain_length: number = plaintext.length;
+  const upperCasePlaintext: string = plaintext.toUpperCase();
   const ciphertext: string[] = [];
 
   // implement cipher algorithm
@@ -74,10 +67,11 @@ const print_ciphertext = (plaintext: string, key: string): string => {
   for (let i: number = 0; i < plain_length; i++) {
     // check for letters
     if ((upperCasePlaintext.charCodeAt(i) > 64 && upperCasePlaintext.charCodeAt(i) < 91)) {
-
+      // iterate over the abc
       for (let j: number = 0; j < abc.length; j++) {
-
+        // check the letters against abc
         if (upperCasePlaintext[i] === abc[j]) {
+          // in case of match > push it to ciphertext array
           // make it case sensitive
           (plaintext.charCodeAt(i) > 64 && plaintext.charCodeAt(i) < 91) ?
             ciphertext.push(key[j].toUpperCase()) :
@@ -89,11 +83,18 @@ const print_ciphertext = (plaintext: string, key: string): string => {
       ciphertext.push(plaintext[i])
     }
   }
-  
+
   const ciphertextString: string = ciphertext.join('');
   return ciphertextString;
 }
 
+// use node.js built in I/O stream
+const readline: any = require('readline').createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
+
+// ask plaintext input from user nad print the ciphertext to the console
 readline.question("plaintext: ", (text: string) => {
   console.log("ciphertext:", print_ciphertext(text, key));
   readline.close();
