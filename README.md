@@ -1,13 +1,18 @@
 # SUBSTITUTION-TS
 Text encrypting program written in TypeScript.
 
-!! Usage: node substitution.js <key> !!
+
 
 ***************************************
-* Key should be 26 characters long!   *
-* Key should consist of only letters! *
-* Key should have unique characters!  *
-* The key is case insensitive.        *
+
+!! Usage: node substitution.js key !!
+
+
+* Key should be 26 characters long!   
+* Key should consist of only letters! 
+* Key should have unique characters!  
+* The key is case insensitive.        
+
 ***************************************
 
 ## BRANCHING STRUCTURE
